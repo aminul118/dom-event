@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+
+</head>
+
+<body>
+    <h1>Comment Cheaker</h1>
+<div class="text-conatainer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aperiam repellat ut? Illo facilis similique dolor culpa optio necessitatibus ratione commodi dolorum pariatur? Sit ipsum harum saepe, quidem officia illum atque illo sint? Debitis accusantium accusamus saepe fugit. Debitis consectetur sapiente deleniti. Molestias sequi doloribus accusantium amet corporis enim dolor ratione, consequatur eius error ullam sed, consequuntur pariatur cum nobis iusto ipsam quisquam praesentium vero possimus nemo eveniet sapiente dolorum!</p>
+    <p>Veniam excepturi, iste aperiam similique ipsum mollitia non voluptatum tenetur pariatur animi laboriosam laborum eaque! Saepe atque laudantium sequi itaque quos quaerat voluptatum tempore adipisci illo ipsam similique nam vel repudiandae, aut animi incidunt consequuntur eligendi! Illo cumque nemo obcaecati, similique fugiat, dolor magni sint quo, dolorem unde repellendus ut! Omnis architecto illo distinctio ducimus saepe odio ut numquam nobis cum labore. Ipsam explicabo maxime pariatur ullam accusantium voluptate at.</p>
+    <p>Officiis perspiciatis, ratione iusto distinctio molestias laborum deleniti deserunt blanditiis officia, soluta quibusdam voluptates sequi. Aperiam quibusdam, cupiditate beatae porro, saepe debitis amet reprehenderit, atque perferendis consectetur sequi. Iure libero ab dolorem minima sapiente cum est distinctio quibusdam a nostrum officiis, voluptatem tempora expedita molestias accusamus consequuntur quod unde incidunt beatae atque doloremque maxime id fugiat iusto? Dolorem quis quam pariatur at sequi magni iste officia, sapiente cum omnis culpa.</p>
+</div>
+
+<div>
+    <textarea name="" id="comment" cols="50" rows="10"></textarea> <br>
+    <button id="post">Post</button>
+</div>
+
+<script>
+    document.getElementById('post').addEventListener('click',function(){
+       const newComment = document.getElementById('comment');
+       const newCommentBox = newComment.value;
+
+       const textContainer = document.getElementById('text-container');
+       const p = document.createElement('p');
+       p.innerText = newCommentBox;
+textContainer.appendChild(p);
+
+newComment.value = '';
+
+
+    
+
+    })
+
+</script>
+
+</body>
+
+</html>
